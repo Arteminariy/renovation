@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './styles/App.css'
-import './components/Service.css'
+import './styles/Service.css'
 import Service from "./components/Service";
 import Footer from "./components/Footer";
 import AboutList from "./components/AboutList";
@@ -11,6 +11,7 @@ import DeliverPhoto from "./photo/рабочий прикол.jpg"
 import ClearingPhoto from "./photo/клиринг.jpg"
 import Review from "./components/Review";
 import OrderBox from "./components/Orders/OrderBox";
+import CallUsForm from "./components/CallUsForm";
 
 
 
@@ -147,7 +148,7 @@ function App() {
       }}/>
 
       <Popup active={popup} setActive={setPopup}>
-
+        <CallUsForm/>
       </Popup>
       <div className="bgi"></div>
     </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Children, cloneElement } from "react";
 import { FaChevronLeft, FaChevronRight} from 'react-icons/fa'
-import './Carousel.css'
+import '../styles/Carousel.css'
 
 const PAGE_WIDTH = window.screen.width / 3 - 70
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Service.css"
+import "../styles/Service.css"
 
 const Service = (props) => {
     return (

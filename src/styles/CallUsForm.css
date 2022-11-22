@@ -1,0 +1,18 @@
+.callUsForm {
+    display: flex;
+    flex-direction: column;
+}
+.callUsForm input {
+    border: none;
+    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.callUsForm button {
+    border: none;
+    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}

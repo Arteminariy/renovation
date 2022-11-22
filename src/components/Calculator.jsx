@@ -1,6 +1,6 @@
 import React from "react";
 import Moscow from "../sum";
-import "./Calculator.css"
+import "../styles/Calculator.css"
 
 const categoryPusher = (obj) => {
     const objArr = Array.from(obj);

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css"
+import "../styles/Footer.css"
 import tgphoto from "../photo/tgIconBlack.svg"
 import waphoto from "../photo/waIconBlack.svg"
 

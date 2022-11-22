@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutList.css"
+import "../styles/AboutList.css"
 // import Employee from "./Employee";
 import Project from "./Project";
 import { projects } from './content.js'
