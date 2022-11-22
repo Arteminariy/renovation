@@ -1,0 +1,74 @@
+.footer {
+    width: calc(100% - 20px);
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#teleBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.teleBlocks {
+
+}
+.snLinks {
+    width: 24px;
+    height: 24px;
+}
+.snLinksA {
+
+}
+.tel {
+
+}
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+    .snLinks {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .snLinks {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .snLinks {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+}
+
+@media (max-width: 730px) and (min-width: 540px) {
+    .snLinks {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+@media (max-width: 540px) {
+    #teleBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .snLinks {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    pre {
+        display: none;
+    }
+}

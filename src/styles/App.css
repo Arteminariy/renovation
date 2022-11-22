@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.App {
+    
+    background-image: url(../photo/Ремонт\ задний\ фон.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: rgb(214, 214, 214);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(137, 137, 137);
+}
+
+header {
+    width: calc(100% - 20px);
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.main {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0);
+}
+/* 
+.bgi {
+    background-image: url(../photo/Ремонт\ задний\ фон.jpg);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+} */
+
+.services {
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.serviceTitle {
+    width: calc(100% - 20px);
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.orderBox {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+}
+.reviewBox {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+}
+.aboutBlock {
+    background-color: rgba(0, 0, 0, 0);
+}
+/* 
+.soccet {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5)
+} */
+
+.moreReview {
+    width: calc(50% - 20px);
+    padding: 10px;
+    margin: 10px;
+    margin-left: calc(25% + 10px);
+    margin-right: calc(25% + 10px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
+}
+
+.moreReview:hover {
+    box-shadow: 0px 10px 10px 5px rgb(174 174 174 / 50%);
+}
+
+.profiLink {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 1440px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    h4 {
+        font-size: 1.45rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1440px){
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.9rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.35rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    h1 {
+        font-size: 1.9rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 0.9rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    .moreReview {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+}
+@media (min-width: 540px) and (max-width: 730px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.9rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.35rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .moreReview {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+}
+@media (max-width: 540px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 0.9rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    .moreReview {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+}

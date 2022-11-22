@@ -1,0 +1,67 @@
+.servicesBox {
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.service {
+    width: calc(25% - 20px);
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+.serviceName {
+    text-align: center;
+    padding: 10px;
+}
+.servicePhoto {
+    width: 100%;
+    padding: 10px;
+    border-radius: 1rem;
+}
+.servicePrice {
+    text-align: center;
+    padding: 10px;
+}
+.servicePrice span {
+    color: rgb(252, 59, 59);
+    font-weight: bold;
+}
+.servicePrice span:hover {
+    color: rgb(252, 59, 59);
+    font-weight: bold;
+    transition: 300ms;
+    text-decoration: underline;
+}
+.serviceDescription {
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+    .service {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 540px) {
+    .service {
+        width: calc(100% - 20px);
+    }
+}

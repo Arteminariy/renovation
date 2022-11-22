@@ -1,0 +1,50 @@
+.order {
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: calc(25% - 20px);
+    justify-content: space-between;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.orderTitle {
+    padding: 10px;
+}
+.orderDescription {
+    padding: 10px;
+}
+.order button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px;
+    width: calc(100% - 20px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
+}
+.order button:hover {
+    box-shadow: 0px 10px 10px 5px rgb(174 174 174 / 50%);
+}
+@media (min-width: 540px) and (max-width: 730px) {
+    .order {
+        width: calc(50% - 20px);
+    }
+    .orderBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 540px) {
+    .order {
+        width: calc(100% - 20px);
+    }
+    .orderBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
