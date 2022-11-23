@@ -31,7 +31,7 @@
 }
 
 .target ul {
-    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
+    box-shadow: 0 5px 10px 0 rgba(174, 174, 174, 0.5);
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -45,7 +45,7 @@
     padding: 10px;
     margin: 10px;
     display: block;
-    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
+    box-shadow: 0 5px 10px 0 rgba(174, 174, 174, 0.5);
     border-radius: 10px;
 }
 .employeePropBox {
@@ -66,6 +66,11 @@
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0);
 }
+
+.projectBox {
+    flex-wrap: wrap;
+}
+
 .employeeFunc {
     display: block;
     float: left;
@@ -84,7 +89,7 @@
 }
 .employeePost, .projectsPost {
     display: block;
-    box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
+    box-shadow: 0 5px 10px 0 rgba(174, 174, 174, 0.5);
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -93,10 +98,6 @@
     width: calc((100%/4) - 20px);
     display: flex;
     flex-direction: column;
-}
-
-.projectsPost {
-    display: flex;
 }
 
 .employeeExp {
@@ -110,37 +111,7 @@
     float: left;
 }
 
-.employeePic {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    padding: 10px;
-    float: left;
-    display: block;
-}
-
-.projectsPic {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 1rem;
-    padding: 10px;
-    float: left;
-    display: block;
-}
-
-/* .employeePic:hover {
-    border: 2px solid rgb(255, 83, 83);
-    transition: 300ms;
-}
-.employeePic:hover ~ .employeePropBox h4 {
-    color:rgb(255, 83, 83);
-} */
 @media (min-width: 1800px) {
-    .projectsPic {
-        width: 20rem;
-        height: 20rem;
-        border-radius: 1rem;
-    }
 
     .projectBox {
         display: flex;
@@ -149,11 +120,6 @@
     }
 }
 @media (min-width: 1440px) and (max-width: 1800px) {
-    .projectsPic {
-        width: 10rem;
-        height: 10rem;
-        border-radius: 1rem;
-    }
     .projectsPost {
         width: calc((100%/3) - 20px);
     }
@@ -165,24 +131,21 @@
 }
 
 @media (min-width: 730px) and (max-width: 1440px) {
-    .projectsPic {
-        width: 10rem;
-        height: 10rem;
-        border-radius: 1rem;
-    }
     .projectsPost {
-        width: calc(100% - 20px);
+        width: calc((100%/2) - 20px);
+    }
+    .projectBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
 @media (min-width: 540px) and (max-width: 730px) {
-    .projectsPic {
-        width: 16rem;
-        height: 16rem;
-        border-radius: 1rem;
-    }
     .projectBox {
+        display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
     .projectsPost {
         width: calc(100% - 20px);
@@ -190,11 +153,6 @@
 }
 
 @media (max-width: 540px) {
-    .projectsPic {
-        width: 8rem;
-        height: 8rem;
-        border-radius: 1rem;
-    }
     .projectsPost {
         display: flex;
         flex-direction: column;
@@ -202,11 +160,16 @@
     .projectBox {
         flex-direction: column;
     }
-    .employeePic {
-        width: 4rem;
-        height: 4rem;
-    }
     .projectsPost {
         width: calc(100% - 20px);
     }
+}
+
+.projectsPic {
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+    padding: 10px;
+    float: left;
+    display: block;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import './Order.css';
+import '../styles/Order.css';
 
 
 const Order = ({orders}) => {

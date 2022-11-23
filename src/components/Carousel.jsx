@@ -2,7 +2,21 @@ import React, { useEffect, useState, Children, cloneElement } from "react";
 import { FaChevronLeft, FaChevronRight} from 'react-icons/fa'
 import '../styles/Carousel.css'
 
-const PAGE_WIDTH = window.screen.width / 3 - 70
+let PAGE_WIDTH;
+
+if (window.screen.width >= 1800) {
+    PAGE_WIDTH = window.screen.width / 4 - 70
+}
+if (window.screen.width >= 1400 && window.screen.width <= 1800) {
+    PAGE_WIDTH = window.screen.width / 3 - 70
+}
+if (window.screen.width >= 730 && window.screen.width <= 1400) {
+    PAGE_WIDTH = window.screen.width / 2 - 70
+}
+if (window.screen.width <= 730) {
+    PAGE_WIDTH = window.screen.width - 70
+}
+
 
 const Carousel = ({children}) => {
     const [pages, setPages] = useState([])

@@ -10,7 +10,7 @@ import DesignPhoto from "./photo/Кафе.png"
 import DeliverPhoto from "./photo/рабочий прикол.jpg"
 import ClearingPhoto from "./photo/клиринг.jpg"
 import Review from "./components/Review";
-import OrderBox from "./components/Orders/OrderBox";
+import OrderBox from "./components/OrderBox";
 import CallUsForm from "./components/CallUsForm";
 
 
@@ -148,7 +148,7 @@ function App() {
       }}/>
 
       <Popup active={popup} setActive={setPopup}>
-        <CallUsForm/>
+        <CallUsForm popup={setPopup}/>
       </Popup>
       <div className="bgi"></div>
     </div>
