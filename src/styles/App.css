@@ -9,7 +9,7 @@
 
 .App {
     
-    background-image: url(../photo/Ремонт\ задний\ фон.jpg);
+    background-image: url(../img/Ремонт\ задний\ фон.jpg);
     background-attachment: fixed;
     background-size: 100%;
     margin: 0;
@@ -51,7 +51,7 @@ header {
 }
 /* 
 .bgi {
-    background-image: url(../photo/Ремонт\ задний\ фон.jpg);
+    background-image: url(../img/Ремонт\ задний\ фон.jpg);
     position: absolute;
     width: 100vw;
     height: 100vh;

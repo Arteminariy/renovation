@@ -15,37 +15,10 @@ const AboutList = () => {
                     <li><p className="targetDescription">Выполняли сложные дизайнерские решения.</p></li>
                     <li><p className="targetDescription">Предоставляем фотоотчёт о доставленных материалах.</p></li>
                     <li><p className="targetDescription">Оплата по этапам выполненых работ.</p></li>
-                    {/* <li><p className="targetDescription"></p></li> */}
                 </ul>
                 
                 
             </div>  
-            {/* <div className="target">
-                <h3 className="aboutListTitle">Наши преимущества:</h3>
-                <ul>
-                    <li><p className="targetDescription">Главной нашей целью является выполнение поставленных клиентом задач</p></li>
-                    <li><p className="targetDescription">Главной нашей целью является выполнение поставленных клиентом задач</p></li>
-                    <li><p className="targetDescription">Главной нашей целью является выполнение поставленных клиентом задач</p></li>
-                    <li><p className="targetDescription">Главной нашей целью является выполнение поставленных клиентом задач</p></li>
-                </ul>
-            </div>   */}
-            {/* <div className="aboutUs">
-                <h3 className="aboutListTitle">{props.employees.title}</h3>
-                <div className="employeeBox">
-                    <Employee employee = {{
-                        name: props.employees.employeeList[0].name,
-                        exp: props.employees.employeeList[0].exp,
-                        post: props.employees.employeeList[0].post,
-                        pic: props.employees.employeeList[0].pic
-                    }}/>
-                    <Employee employee = {{
-                        name: props.employees.employeeList[1].name,
-                        exp: props.employees.employeeList[1].exp,
-                        post: props.employees.employeeList[1].post,
-                        pic: props.employees.employeeList[1].pic
-                    }}/>
-                </div>
-            </div>   */}
             <div className="projectList">
                 <h3 className="aboutListTitle">Наши Проекты:</h3>
                 <div className="projectBox">

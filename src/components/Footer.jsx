@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Footer.css"
-import tgphoto from "../photo/tgIconBlack.svg"
-import waphoto from "../photo/waIconBlack.svg"
+import tgphoto from "../img/tgIconBlack.svg"
+import waphoto from "../img/waIconBlack.svg"
 
 const Footer = (props) => {
     

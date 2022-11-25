@@ -5,10 +5,10 @@ import Service from "./components/Service";
 import Footer from "./components/Footer";
 import AboutList from "./components/AboutList";
 import Popup from "./components/Popup";
-import RenovationPhoto from "./photo/Ремонт задний фон.jpg"
-import DesignPhoto from "./photo/Кафе.png"
-import DeliverPhoto from "./photo/рабочий прикол.jpg"
-import ClearingPhoto from "./photo/клиринг.jpg"
+import RenovationPhoto from "./img/Ремонт.png"
+import DesignPhoto from "./img/Дизайн.png"
+import DeliverPhoto from "./img/Доставка.png"
+import ClearingPhoto from "./img/Уборка.png"
 import Review from "./components/Review";
 import OrderBox from "./components/OrderBox";
 import CallUsForm from "./components/CallUsForm";
@@ -16,12 +16,6 @@ import CallUsForm from "./components/CallUsForm";
 
 
 function App() {
-  const PriceList = {
-    Cosmetic: "9999",
-    Second: "9999",
-    First: "9999",
-    Kee: "9999"
-  }
   const [popup, setPopup] = useState(false)
   return (
     <div className="App">
@@ -39,49 +33,30 @@ function App() {
             description: `Ремонт любой сложности: от косметичского до дизайнерского`,
             photo: RenovationPhoto,
             altphoto: "Фото ремонта",
-            price: PriceList.Cosmetic
           }}/>
           <Service service = {{
             name: "Дизайн-проект",
             description: `Разработка дизайна любой сложности`,
             photo: DesignPhoto,
             altphoto: "Фото дизайн-проекта",
-            price: PriceList.Second
           }}/>
           <Service service = {{
             name: "Доставка стройматериалов на объект",
             description: `Используем сертифицированные материалы`,
             photo: DeliverPhoto,
             altphoto: "Фото доставки",
-            price: PriceList.First
           }}/>
           <Service service = {{
             name: "Уборка объекта после ремонта",
             description: `Специалисты уберут помещение качественными материалами`,
             photo: ClearingPhoto,
             altphoto: "Фото Ремонта под ключ",
-            price: PriceList.Kee
           }}/>
           </div>
         </div>
         <div className="serviceTitle"><h2>О нас</h2></div>
         <div className="aboutBlock">
-          <AboutList 
-          // employees = {{title: "Наши сотрудники:", employeeList: [
-          //   {
-          //     name: "Нодир",
-          //     exp: "10",
-          //     post: "Бригадир",
-          //     pic: EmployeePhoto_1
-          //   },
-          //   {
-          //     name: "Владимир",
-          //     exp: "15",
-          //     post: "Сантехник",
-          //     pic: EmployeePhoto_1
-          //   }
-          // ]}} 
-          />
+          <AboutList/>
         </div>
         <div className="serviceTitle"><h2>Заказать</h2></div>
           <OrderBox popup={setPopup}/>

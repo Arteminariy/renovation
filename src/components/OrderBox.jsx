@@ -9,7 +9,7 @@ const OrderBox = ({popup}) => {
             {orders.map((order) => {
 
                 return(
-                    <Order orders = {
+                    <Order key={orders.indexOf(order)} orders = {
                         {
                             link: popup,
                             title: order.title,

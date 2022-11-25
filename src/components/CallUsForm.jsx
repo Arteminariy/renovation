@@ -28,7 +28,10 @@ const CallUsForm = ({popup}) => {
             YOUR_PUBLIC_KEY
         );
         popup();
-
+        setName('')
+        setEmail('')
+        setTel('')
+        setMessage('')
     };
 
     return (
