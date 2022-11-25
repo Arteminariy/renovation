@@ -4,6 +4,10 @@ import emailjs from '@emailjs/browser';
 
 const CallUsForm = ({popup}) => {
 
+    let clicked = false
+
+    const [warning, setWarning] = useState(false)
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [tel, setTel] = useState('');
@@ -19,20 +23,42 @@ const CallUsForm = ({popup}) => {
         email: `${email}`
     };
 
+    
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.send(
-            YOUR_SERVICE_ID,
-            YOUR_TEMPLATE_ID,
-            PARAMS,
-            YOUR_PUBLIC_KEY
-        );
-        popup();
-        setName('')
-        setEmail('')
-        setTel('')
-        setMessage('')
+        if(!name || !email || !tel || !message) {
+            // console.log('not sent')
+            // console.log(name, email, tel, message)
+            setWarning(true)
+            setTimeout(() => {
+                setWarning(false)
+            }, "5000")
+        }
+        else {
+            emailjs.send(
+                YOUR_SERVICE_ID,
+                YOUR_TEMPLATE_ID,
+                PARAMS,
+                YOUR_PUBLIC_KEY
+            );
+            
+            clicked = !clicked
+
+            // console.log('sent')
+
+            setName('')
+            setEmail('')
+            setTel('')
+            setMessage('')
+            popup();
+        }
     };
+
+    // console.log(warning)
+
+    const warningDisplay = (warning) => {
+        return warning ? 'flex' : 'none' 
+    }
 
     return (
         <div className='callUs'>
@@ -53,7 +79,8 @@ const CallUsForm = ({popup}) => {
                     <p>Email:</p>
                     <input type="email" value={email} onChange={e => setEmail(e.target.value)}/>
                 </div>
-                <button type="submit" onClick={sendEmail}>Отправить</button>
+                <p style={{display: warningDisplay(warning)}}>Заполните все поля</p>
+                <button type="submit" onClick={clicked === false ? sendEmail : console.log('Already clicked')}>Отправить</button>
             </form>
         </div>
     )

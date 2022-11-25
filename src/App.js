@@ -41,7 +41,7 @@ function App() {
             altphoto: "Фото дизайн-проекта",
           }}/>
           <Service service = {{
-            name: "Доставка стройматериалов на объект",
+            name: "Доставка материалов на объект",
             description: `Используем сертифицированные материалы`,
             photo: DeliverPhoto,
             altphoto: "Фото доставки",
@@ -119,7 +119,7 @@ function App() {
       
       <Footer contacts = {{
         number: "+79858286383",
-        email: "nnborisova5@yandex.ru"
+        email: "nodirrazumov@gmail.com"
       }}/>
 
       <Popup active={popup} setActive={setPopup}>

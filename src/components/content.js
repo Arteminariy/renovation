@@ -29,7 +29,7 @@ const projects = [
         pictures: [pic_2_1]
     },
     {
-        title: `Трёхкомнатная квартира в мытищах`,
+        title: `Трёхкомнатная квартира в Мытищах`,
         time: 6,
         service: ``,
         pictures: [pic_3_1, pic_3_2, pic_3_3, pic_3_4, pic_3_5]
