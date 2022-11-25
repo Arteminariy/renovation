@@ -5,10 +5,10 @@ import Service from "./components/Service";
 import Footer from "./components/Footer";
 import AboutList from "./components/AboutList";
 import Popup from "./components/Popup";
-import RenovationPhoto from "./img/Ремонт.png"
-import DesignPhoto from "./img/Дизайн.png"
-import DeliverPhoto from "./img/Доставка.png"
-import ClearingPhoto from "./img/Уборка.png"
+import RenovationPhoto from "./img/Renovation.png"
+import DesignPhoto from "./img/Design.png"
+import DeliverPhoto from "./img/Delivery.png"
+import ClearingPhoto from "./img/Clearing.png"
 import Review from "./components/Review";
 import OrderBox from "./components/OrderBox";
 import CallUsForm from "./components/CallUsForm";

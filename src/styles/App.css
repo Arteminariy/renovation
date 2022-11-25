@@ -9,7 +9,7 @@
 
 .App {
     
-    background-image: url(../img/Ремонт\ задний\ фон.jpg);
+    background-image: url(../img/bgImg.jpg);
     background-attachment: fixed;
     background-size: 100%;
     margin: 0;
@@ -49,13 +49,6 @@ header {
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0);
 }
-/* 
-.bgi {
-    background-image: url(../img/Ремонт\ задний\ фон.jpg);
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-} */
 
 .services {
     justify-content: center;
