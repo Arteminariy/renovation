@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+Sitemap: http://xn----7sbmfdsxbdekv4a2jvd.xn--p1ai/

@@ -8,7 +8,7 @@ const Footer = (props) => {
     return (
         <div className="footer">
           <div id="teleBlock">
-            <div className="teleBlocks">
+            <div className="teleBlocks social">
               <a href="https://t.me/+79858286383" className="snLinksA" id="tglogoLink" ><img className="snLinks" alt="Связаться в Telegram" src={tgphoto}></img></a>
               <a href={"https://wa.me/79858286383"} className="snLinksA" id="walogoLink" ><img className="snLinks" alt="Связаться в WhatsApp" src={waphoto}></img></a>
             </div>
