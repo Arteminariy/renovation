@@ -8,11 +8,11 @@
 }
 
 .App {
-    
     background-image: url(../img/bgImg.jpg);
     background-attachment: fixed;
     background-size: 100%;
     margin: 0;
+    padding: 10px 0 10px 0; 
 }
 
 ::-webkit-scrollbar {
@@ -39,8 +39,7 @@ header {
     box-shadow: 0px 5px 10px 0px rgba(174, 174, 174, 0.5);
     border-radius: 10px;
     padding: 10px;
-    margin: 10px;
-    margin-top: 10px;
+    margin: 0 10px 10px 10px;
 }
 
 .main {
